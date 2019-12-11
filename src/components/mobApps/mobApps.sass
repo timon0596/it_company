@@ -1,0 +1,61 @@
+section.mobApps
+	height: 700px
+	text-align: center
+	background: white
+	padding-top: 110px
+	h2
+		color: #323232
+		margin-bottom: 50px
+	.siteDev
+		margin-top: 70px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-wrap: nowrap
+		justify-content: center
+		.siteDev_item
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			position: relative
+			margin-left: 30px
+			padding-right: 35px
+			.text
+				position: absolute
+				top: calc(50% + 25px)
+				text-align: left
+				font-style: normal
+				font-weight: normal
+				font-size: 14px
+				line-height: 22px
+			.project
+				margin-right: 17px
+				position: relative
+				display: block
+				width: 110px
+				height: 110px
+				background: center no-repeat url('./img/project.svg')
+				&:before
+					content: ''
+					display: block
+					width: 110px
+					height: 110px
+					border-radius: 50%
+					border: 1px solid #E0E0E0
+				&:after
+					position: absolute
+					top: 10px
+					left: 10px
+					display: block
+					content: ''
+					width: 90px
+					height: 90px
+					border-radius: 50%
+					border: 1px solid #4985FF
+	.blueButton		
+		margin-top: 85px

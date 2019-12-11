@@ -67,6 +67,17 @@ module.exports={
 				    	useRelativePath: true
 					}
 				}]
+	  		},
+	       	{
+				test: /\.(webm)$/,
+				use: [ {
+			  		loader: "file-loader",
+					options: {
+				    	name: "[name].[ext]",
+				    	outputPath: './video/',
+				    	useRelativePath: true
+					}
+				}]
 	  		}
   		]
 	},

@@ -1,15 +1,11 @@
 {
-  "name": "it_company",
+  "name": "it-company",
   "version": "1.0.0",
-  "description": "test",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "webpack --mode development",
     "web": "webpack-dev-server --mode development --open"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/timon0596/it_company.git"
   },
   "author": "tim zaytsev",
   "license": "ISC",
@@ -50,9 +46,5 @@
     "popper.js": "^1.15.0",
     "slick-carousel": "^1.8.1",
     "webpack-jquery-ui": "^2.0.1"
-  },
-  "bugs": {
-    "url": "https://github.com/timon0596/it_company/issues"
-  },
-  "homepage": "https://github.com/timon0596/it_company#readme"
+  }
 }
