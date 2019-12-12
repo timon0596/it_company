@@ -1,0 +1,46 @@
+.play_btn
+	display: block
+	width: 300px
+	height: 100px
+	background: url('./img/video__button.svg')
+	z-index: 2
+	position: absolute
+	cursor: pointer
+.controls
+	display: block
+	width: 687px
+	height: 30px
+	background: rgba(0, 0, 0, .5)
+	position: absolute
+	bottom: 21px
+	.videoduration_range
+		display: block
+		position: absolute
+		bottom: 30px
+		width: 100%
+		height: 7px
+		.currenttime_range
+			display: block
+			width: 0%
+			height: 100%
+			background: rgba(29%, 52%, 100%, .5)
+	.playpause_btn
+		position: absolute
+		bottom: 5px
+		left: 20px
+		cursor: pointer
+		box-sizing: content-box
+	.playpause_btn:before
+		content: ''
+		display: block
+		width: 10px
+		height: 20px
+		border-left: 4px solid white
+		border-right: 4px solid white
+	.playpause_btn.paused:before
+		content: ''
+		display: block
+		width: 0px
+		height: 0px
+		border: 10px solid transparent
+		border-left: 10px solid white

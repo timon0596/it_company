@@ -3,4 +3,7 @@ section.subscription
 	.video
 		h2.white Видео о нашей работе
 		| Просто посмотрите, как мы работаем
-		video(src="./video/video.webm" type="./video/mp4")
+		.videoplayer
+			.preview
+			video(src="./video/video.webm" type="./video/mp4")
+			include ./../videocontrols/videocontrols
