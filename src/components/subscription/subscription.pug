@@ -2,8 +2,14 @@ section.subscription
 	.subscription_bgr
 	.video
 		h2.white Видео о нашей работе
-		| Просто посмотрите, как мы работаем
+		span Просто посмотрите, как мы работаем
 		.videoplayer
 			.preview
 			video(src="./video/video.webm" type="./video/mp4")
 			include ./../videocontrols/videocontrols
+	h3 Подпишитесь на нашу рассылку
+	| Полезные статьи, акции, новости - получите все это сейчас!
+	.email
+		input(type="text", name="email" placeholder="Ваш e-mail")
+		.blueButton.subscribe Подписаться
+	p Мы не шлем спам, и передаем никому ваши данные.
