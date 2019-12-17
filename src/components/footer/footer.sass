@@ -1,0 +1,57 @@
+footer
+	padding-top: 70px
+	background: #F6F6F8
+	font-size: 14px
+	line-height: 22px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	flex-direction: column
+	.container
+		width: 1110px
+		display: grid
+		grid-template-columns: repeat(4,1fr)
+		padding-bottom: 70px
+		.column
+			h3
+				margin-bottom: 35px
+			nav
+				ul
+					li
+						display: -webkit-flex
+						display: -moz-flex
+						display: -ms-flex
+						display: -o-flex
+						display: flex
+						align-items: center
+						&:not(:nth-child(1))
+							margin-top: 30px
+						a
+							margin-left: 15px
+						&:before
+							display: block
+							content: ''
+							width: 15px
+							height: 15px
+					li:nth-child(1):before
+						background: center no-repeat url('./img/mail.svg')
+					li:nth-child(2):before
+						background: center no-repeat url('./img/phone.svg')
+					li:nth-child(3):before
+						background: center no-repeat url('./img/placeholder.svg')
+
+			nav:not(.contact_info)
+				ul
+					li
+						a
+							margin-left: 10px
+					li:before
+						background: center url('./img/right-arrow.svg')
+						width: 10px
+						height: 10px
+	span
+		margin: 35px 0px
+
