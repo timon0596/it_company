@@ -1,5 +1,6 @@
 section.devstandards
 	padding-top: 100px
+
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
@@ -10,7 +11,7 @@ section.devstandards
 	align-items: center
 	background: #F6F6F8
 	.content
-		width: 1110px
+		max-width: 1110px
 		display: -webkit-flex
 		display: -moz-flex
 		display: -ms-flex
@@ -20,7 +21,7 @@ section.devstandards
 		padding-bottom: 90px
 		justify-content: space-between
 		.text
-			width: 490px
+			width: 490px	
 			display: -webkit-flex
 			display: -moz-flex
 			display: -ms-flex
@@ -28,6 +29,7 @@ section.devstandards
 			display: flex
 			flex-direction: column
 			justify-content: center
+			margin-right: 120px
 			h2
 				color: #323232
 				margin-bottom: 40px
@@ -46,9 +48,8 @@ section.devstandards
 		display: flex
 		justify-content: center
 		margin: 70px 0px
-		.projects_item:not(:first-child)
-			margin-left: 100px
 		.projects_item
+			margin: 0px 50px
 			.row
 				display: -webkit-flex
 				display: -moz-flex
@@ -60,3 +61,32 @@ section.devstandards
 				h2
 					margin-left: 20px
 					color: #000
+@media screen and ( max-width: 1280px )
+	section.devstandards
+		
+		.content
+			flex-wrap: wrap
+			max-width: 1110px
+			justify-content: center
+			.text
+				margin-right: 0px
+				h2
+				a
+			img
+		.projects
+			flex-wrap: wrap
+@media screen and ( max-width: 768px )
+	section.devstandards
+		.content
+			padding-left: 50px
+			padding-right: 50px
+			.text
+				width: 100%
+				h2
+				a
+			img
+				width: 100%
+				margin-left: -4%
+		.projects
+			flex-wrap: wrap
+						
