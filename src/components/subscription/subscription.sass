@@ -33,6 +33,7 @@ section.subscription
 		padding-bottom: 85px
 		margin-bottom: 85px
 		border-bottom: 1px solid #E0E0E0
+
 		span
 			color: white
 		h2.white
@@ -49,22 +50,69 @@ section.subscription
 			width: 970px
 			height: 430px
 			position: relative
-			.preview
-				position: absolute
-				display: block
-				width: 100%
-				height: 100%
-				background: url('./img/videopreview.svg')
-				background-size: cover
-				top: 0px
-				left: 0px
-				z-index: 3
-			video
-				display: block
-				transform-origin: 50% 50%
-				//transform: translate(485px, 215px)
-				width: 90%
-				height: 90%
+			background: url('./img/videopreview.svg')
+			background-size: cover
+			.videocontainer
+				width: 75%
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: center
+				align-items: center
+				position: relative
+				video
+					display: block
+				.play_btn
+					display: block
+					flex-basis: 300px
+					height: auto
+					background: url('./img/video__button.svg')
+					z-index: 5
+					cursor: pointer
+					top: 0px
+				.controls
+					display: block
+					width: 100%
+					height: 30px
+					background: rgba(0, 0, 0, .5)
+					position: absolute
+					bottom: 0px
+					z-index: 1
+					.videoduration_range
+						display: block
+						position: absolute
+						bottom: 30px
+						width: 100%
+						height: 7px
+						background: rgba(29%, 52%, 100%, .5)
+						cursor: pointer
+						.currenttime_range
+							display: block
+							width: 0%
+							height: 100%
+							background: rgba(29%, 52%, 100%, .8)
+					.playpause_btn
+						position: absolute
+						bottom: 5px
+						left: 20px
+						cursor: pointer
+						box-sizing: content-box
+					.playpause_btn:before
+						content: ''
+						display: block
+						width: 10px
+						height: 20px
+						border-left: 4px solid white
+						border-right: 4px solid white
+					.playpause_btn.paused:before
+						content: ''
+						display: block
+						width: 0px
+						height: 0px
+						border: 10px solid transparent
+						border-left: 10px solid white
 	h3
 		margin-bottom: 20px
 	.email
@@ -104,3 +152,5 @@ section.subscription
 	p
 		font-size: 13px
 		line-height: 21px
+// @media (max-width: 1000px)
+	

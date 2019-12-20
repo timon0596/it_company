@@ -7,7 +7,28 @@ section.our_projects
 		margin-bottom: 50px
 	.imgs
 		margin-top: 70px
-		img:not(:first-child)
-			margin-left: 30px
+		img
+			margin: 15px
 	a.blueButton 
 		margin-top: 50px
+@media (max-width: 1280px)
+	section.our_projects
+		.imgs
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+@media (max-width: 320px)
+	section.our_projects
+		padding: 15px
+		.imgs
+			margin-top: 15px
+			img
+				width: 100%
+		a.blueButton 
+			width: 100%
+			margin-top: 30px
+			

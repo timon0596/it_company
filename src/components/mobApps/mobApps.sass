@@ -24,14 +24,16 @@ section.mobApps
 			position: relative
 			margin-left: 30px
 			padding-right: 35px
-			.text
-				position: absolute
-				top: calc(50% + 25px)
-				text-align: left
-				font-style: normal
-				font-weight: normal
-				font-size: 14px
-				line-height: 22px
+			.name
+				position: relative
+				.text
+					position: absolute
+					top: calc(50% + 25px)
+					text-align: left
+					font-style: normal
+					font-weight: normal
+					font-size: 14px
+					line-height: 22px
 			.project
 				margin-right: 17px
 				position: relative
@@ -64,3 +66,15 @@ section.mobApps
 			flex-wrap: wrap
 			.siteDev_item
 				margin-top: 60px
+@media screen and ( max-width: 320px )
+	section.mobApps
+		.siteDev
+			margin: 0px
+			.siteDev_item
+				flex-direction: column
+				align-items: center
+				margin-bottom: 120px
+				.name
+					margin-top: 15px
+					.text
+						bottom: -100%
