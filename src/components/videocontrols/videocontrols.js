@@ -7,8 +7,9 @@ video.ontimeupdate = function(){
 
 }
 $('.videoplayer .play_btn').click(function(){
-	$('.videoplayer .preview').css('display', 'none')
 	$(this).css('display','none')
+	$('.videoplayer .controls').slideToggle(250)
+	$('.playpause_btn').toggleClass('paused')
 	video.play()
 })
 $('.playpause_btn').click(function(){
@@ -26,5 +27,7 @@ $('.videoplayer .videoduration_range').click(function(e){
 	console.log($(this)[0].getBoundingClientRect().left)
 	video.pause()
 	video.currentTime = video.duration * clickedTimestamp
-	video.play()
+	if(!$('.playpause_btn').hasClass('paused')){
+		video.play()
+	}
 })

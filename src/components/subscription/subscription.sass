@@ -39,80 +39,66 @@ section.subscription
 		h2.white
 			margin-bottom: 30px
 		.videoplayer
-			margin-top: 70px
 			display: -webkit-flex
 			display: -moz-flex
 			display: -ms-flex
 			display: -o-flex
 			display: flex
-			justify-content: center
-			align-items: center
-			width: 970px
-			height: 430px
+			flex-direction: column
+			height: min-content
 			position: relative
-			background: url('./img/videopreview.svg')
-			background-size: cover
-			.videocontainer
-				width: 75%
-				display: -webkit-flex
-				display: -moz-flex
-				display: -ms-flex
-				display: -o-flex
-				display: flex
-				justify-content: center
-				align-items: center
-				position: relative
-				video
+			video
+				display: block
+				height: 430px
+			.play_btn
+				display: block
+				width: 300px
+				height: 100px
+				background: url('./img/video__button.svg')
+				z-index: 5
+				cursor: pointer
+				position: absolute
+				top: calc(50% - 50px)
+				left: calc(50% - 150px)
+			.controls
+				display: none
+				width: 100%
+				height: 35px
+				background: rgba(0, 0, 0, .3)
+				bottom: 0px
+				z-index: 1
+				.videoduration_range
 					display: block
-				.play_btn
-					display: block
-					flex-basis: 300px
-					height: auto
-					background: url('./img/video__button.svg')
-					z-index: 5
-					cursor: pointer
-					top: 0px
-				.controls
-					display: block
+					bottom: 30px
 					width: 100%
-					height: 30px
-					background: rgba(0, 0, 0, .5)
+					height: 7px
+					background: rgba(29%, 52%, 100%, .5)
+					cursor: pointer
+					.currenttime_range
+						display: block
+						width: 0%
+						height: 100%
+						background: rgba(29%, 52%, 100%, .8)
+				.playpause_btn
 					position: absolute
-					bottom: 0px
-					z-index: 1
-					.videoduration_range
-						display: block
-						position: absolute
-						bottom: 30px
-						width: 100%
-						height: 7px
-						background: rgba(29%, 52%, 100%, .5)
-						cursor: pointer
-						.currenttime_range
-							display: block
-							width: 0%
-							height: 100%
-							background: rgba(29%, 52%, 100%, .8)
-					.playpause_btn
-						position: absolute
-						bottom: 5px
-						left: 20px
-						cursor: pointer
-						box-sizing: content-box
-					.playpause_btn:before
-						content: ''
-						display: block
-						width: 10px
-						height: 20px
-						border-left: 4px solid white
-						border-right: 4px solid white
-					.playpause_btn.paused:before
-						content: ''
-						display: block
-						width: 0px
-						height: 0px
-						border: 10px solid transparent
-						border-left: 10px solid white
+					bottom: 5px
+					left: 20px
+					cursor: pointer
+					box-sizing: content-box
+				.playpause_btn:before
+					content: ''
+					display: block
+					width: 10px
+					height: 20px
+					border-left: 4px solid white
+					border-right: 4px solid white
+				.playpause_btn.paused:before
+					content: ''
+					display: block
+					width: 0px
+					height: 0px
+					border: 10px solid transparent
+					border-left: 10px solid white
 	h3
 		margin-bottom: 20px
 	.email
@@ -152,5 +138,33 @@ section.subscription
 	p
 		font-size: 13px
 		line-height: 21px
-// @media (max-width: 1000px)
-	
+@media screen and (max-width: 1000px)
+	section.subscription
+		padding-left: 30px
+		padding-right: 30px
+		.video
+			width: 100%
+			span
+				color: white
+			h2.white
+				margin-bottom: 30px
+			.videoplayer
+				width: 100%
+				video
+					display: block
+					width: 100%
+					height: auto
+				
+@media screen and ( max-width: 500px )
+	section.subscription
+		padding-left: 0px
+		padding-right: 0px
+		.video
+			.videoplayer
+				video
+				.play_btn
+					background-size: cover
+					width: 150px
+					height: 50px
+					top: calc(50% - 25px)
+					left: calc(50% - 75px)
