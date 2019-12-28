@@ -1,21 +1,21 @@
 footer
-	padding-top: 70px
 	background: #F6F6F8
 	font-size: 14px
 	line-height: 22px
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
-	align-items: center
-	flex-direction: column
+	width: 100%
+	padding: 70px 20px 30px
+	text-align: center
+	
 	.container
-		width: 1110px
+		margin: 0px
+		margin-bottom: 30px
+		max-width: 1110px
 		display: grid
-		grid-template-columns: repeat(4,1fr)
-		padding-bottom: 70px
+		grid-template-columns: repeat(auto-fit,minmax(277.5px,auto))
+		box-sizing: border-box
 		.column
+			margin-bottom: 70px
+			text-align: left
 			h3
 				margin-bottom: 35px
 			nav
@@ -52,6 +52,4 @@ footer
 						background: center url('./img/right-arrow.svg')
 						width: 10px
 						height: 10px
-	span
-		margin: 35px 0px
-
+	

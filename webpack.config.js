@@ -34,7 +34,8 @@ module.exports={
 					            	require('precss'),
 					            	require('autoprefixer')
 				          		];
-				        	}
+				        	},
+				        	useRelativePath: true
 				      	}
 				    },
 				    {
