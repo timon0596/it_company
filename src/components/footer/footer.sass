@@ -10,7 +10,7 @@ footer
 		margin-bottom: 30px
 		max-width: 1110px
 		display: grid
-		grid-template-columns: repeat(auto-fit,minmax(277.5px,auto))
+		grid-template-columns: repeat(4,1fr)
 		box-sizing: border-box
 		.column
 			margin-bottom: 70px
@@ -55,3 +55,7 @@ footer
 	footer
 		.container
 			grid-template-columns: 1fr 1fr
+@media screen and (max-width: 760px)
+	footer
+		.container
+			grid-template-columns: 1fr 
