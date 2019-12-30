@@ -83,7 +83,7 @@ module.exports={
   		]
 	},
 	plugins:[
-		new miniCssExtractPlugin({filename: "[name].[contentHash].css"}),
+		new miniCssExtractPlugin({filename: "[name].css"}),
 		new HWP({
 			template: './index.pug',
 			filename: 'index.html'
