@@ -711,7 +711,7 @@ section.subscription {
         section.subscription .email input::placeholder {
           font-size: 0.5rem; } }
 
-@media (max-width: 720px) {
+@media (max-width: 550px) {
   body {
     font-size: 0.5rem; }
     body h1 {
@@ -727,7 +727,6 @@ section.subscription {
 
 footer {
   background: #F6F6F8;
-  font-size: 14px;
   line-height: 22px;
   width: 100%;
   padding: 70px 20px 30px;
@@ -773,4 +772,8 @@ footer {
         background: center url(img/right-arrow.svg);
         width: 10px;
         height: 10px; }
+
+@media screen and (max-width: 1200px) {
+  footer .container {
+    grid-template-columns: 1fr 1fr; } }
 
